@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150726010501) do
+ActiveRecord::Schema.define(version: 20150726014252) do
 
   create_table "comments", force: :cascade do |t|
     t.string   "body"
@@ -57,8 +57,9 @@ ActiveRecord::Schema.define(version: 20150726010501) do
     t.string   "photo"
     t.string   "intro_video"
     t.boolean  "filmer"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "password_digest"
   end
 
 end
